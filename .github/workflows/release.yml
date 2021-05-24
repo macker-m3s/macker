@@ -22,7 +22,7 @@ jobs:
         run: go build -o dist/macker
 
       - name: Zip
-        run: zip dist/macker.zip dist/macker
+        run: zip -j dist/macker.zip dist/macker
 
       - name: Create Release
         id: create_release
